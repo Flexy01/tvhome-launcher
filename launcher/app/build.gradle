@@ -1,0 +1,146 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.gathin.tvhome'
+    compileSdk 34
+
+    defaultConfig {
+        // Opt-in identity for firmware with a package-name HOME allowlist; see docs/devices/xiaomi-mitv-aetp0-dofus.md.
+        applicationId providers.gradleProperty('launcherApplicationId').getOrElse('com.gathin.tvhome')
+        minSdk 26
+        targetSdk 34
+        // TvHome Launcher's own numbering, from its 1.0 release (the original CleanYourTV was at 5 / 2.4).
+        versionCode 12
+        versionName '1.2'
+        testInstrumentationRunner 'com.gathin.tvhome.ShelfInteractionsCheck'
+    }
+
+    // Secure release signing model for published APKs:
+    // Credentials resolved in order:
+    // 1. -PreleaseKeystore=<path to keystore.properties>
+    // 2. RELEASE_KEYSTORE_PROPERTIES environment variable (path to file)
+    // 3. Direct environment variables (standard for CI/CD runners):
+    //    RELEASE_KEYSTORE_FILE, RELEASE_KEYSTORE_PASSWORD, RELEASE_KEY_ALIAS, RELEASE_KEY_PASSWORD
+    // 4. Base64 keystore via RELEASE_KEYSTORE_BASE64 environment variable (decoded to build cache)
+    // 5. Default local paths outside the repo:
+    //    ~/tvhome-launcher-signing/keystore.properties, then legacy ~/apple-tv-launcher-signing/keystore.properties
+    // If no release signing credentials are provided, release APK remains unsigned (app-release-unsigned.apk).
+    // It NEVER silently falls back to a debug key.
+    def ks = new Properties()
+    def ksPropProvider = providers.gradleProperty('releaseKeystore')
+    def ksPropPath = ksPropProvider.present ? ksPropProvider.get() : System.getenv('RELEASE_KEYSTORE_PROPERTIES')
+    if (ksPropPath) {
+        def f = file(ksPropPath)
+        if (f.exists()) {
+            f.withInputStream { ks.load(it) }
+            // Normalize any BOM on keys if present (common when written on Windows/PowerShell)
+            def bomStoreFileKey = ks.keySet().find { it.toString().contains('storeFile') }
+            if (bomStoreFileKey && bomStoreFileKey.toString() != 'storeFile') {
+                ks.setProperty('storeFile', ks.get(bomStoreFileKey).toString())
+            }
+        }
+    } else {
+        def defaultKs = file(System.getProperty('user.home') + '/tvhome-launcher-signing/keystore.properties')
+        if (!defaultKs.exists()) {
+            defaultKs = file(System.getProperty('user.home') + '/apple-tv-launcher-signing/keystore.properties')
+        }
+        if (defaultKs.exists()) {
+            defaultKs.withInputStream { ks.load(it) }
+            def bomStoreFileKey = ks.keySet().find { it.toString().contains('storeFile') }
+            if (bomStoreFileKey && bomStoreFileKey.toString() != 'storeFile') {
+                ks.setProperty('storeFile', ks.get(bomStoreFileKey).toString())
+            }
+        }
+    }
+
+    // Direct environment variables override or provide credentials
+    def envStoreFile = System.getenv('RELEASE_KEYSTORE_FILE')
+    def envStorePass = System.getenv('RELEASE_KEYSTORE_PASSWORD')
+    def envKeyAlias = System.getenv('RELEASE_KEY_ALIAS')
+    def envKeyPass = System.getenv('RELEASE_KEY_PASSWORD')
+    def envBase64Keystore = System.getenv('RELEASE_KEYSTORE_BASE64')
+
+    if (envBase64Keystore && !envStoreFile) {
+        def decodedKeystore = layout.buildDirectory.file('intermediates/signing/release.keystore').get().asFile
+        decodedKeystore.parentFile.mkdirs()
+        decodedKeystore.bytes = envBase64Keystore.decodeBase64()
+        decodedKeystore.deleteOnExit()
+        envStoreFile = decodedKeystore.absolutePath
+    }
+
+    tasks.configureEach { task ->
+        if (task.name == 'assembleRelease' || task.name == 'packageRelease') {
+            task.doLast {
+                if (envBase64Keystore) {
+                    def ephemeral = layout.buildDirectory.file('intermediates/signing/release.keystore').get().asFile
+                    if (ephemeral.exists()) {
+                        ephemeral.delete()
+                    }
+                }
+            }
+        }
+    }
+
+    if (envStoreFile) ks.setProperty('storeFile', envStoreFile)
+    if (envStorePass) ks.setProperty('storePassword', envStorePass)
+    if (envKeyAlias) ks.setProperty('keyAlias', envKeyAlias)
+    if (envKeyPass) ks.setProperty('keyPassword', envKeyPass)
+
+    def storeFileVal = ks.getProperty('storeFile')
+    def storePassVal = ks.getProperty('storePassword')
+    def keyAliasVal = ks.getProperty('keyAlias')
+    def keyPassVal = ks.getProperty('keyPassword')
+
+    def hasReleaseSigning = storeFileVal && storePassVal && keyAliasVal && keyPassVal
+    def reqReleaseSigning = providers.gradleProperty('requireReleaseSigning').getOrElse('false') == 'true'
+    if (reqReleaseSigning && !hasReleaseSigning) {
+        throw new GradleException('Release signing is required (-PrequireReleaseSigning=true), but valid keystore credentials were not found.')
+    }
+
+    signingConfigs {
+        if (hasReleaseSigning) {
+            release {
+                storeFile file(storeFileVal)
+                storePassword storePassVal
+                keyAlias keyAliasVal
+                keyPassword keyPassVal
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            // R8 strips and optimises the code (AndroidX included): smaller APK, faster start on a slow TV CPU.
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // Release build is ONLY signed with the official release key; never with debug key.
+            if (hasReleaseSigning) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    packagingOptions {
+        resources {
+            // Kotlin metadata pulled in by AndroidX's dependencies. This launcher is plain Java and never reads it;
+            // leaving it out saves about 14 KB of every install.
+            excludes += ['kotlin/**', 'META-INF/*.version', 'META-INF/*.kotlin_module', 'DebugProbesKt.bin']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.dynamicanimation:dynamicanimation:1.0.0'
+    // Test only (never in the APK): plain JVM tests for the module card validators, src/test.
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20240303'
+}

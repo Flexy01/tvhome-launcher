@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- View tags holding each tile's springs (TvFocusMotion). -->
+<resources>
+    <item name="motion_scale_x" type="id" />
+    <item name="motion_scale_y" type="id" />
+    <item name="motion_z" type="id" />
+    <item name="motion_rot_x" type="id" />
+    <item name="motion_rot_y" type="id" />
+    <item name="motion_tx" type="id" />
+</resources>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Apple tvOS 27 Compact Control Center (Denetim Merkezi) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/controlCenterPanel"
+    android:layout_width="256dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/glass_panel"
+    android:padding="8dp"
+    android:elevation="16dp">
+
+    <!-- Top Profile Pill Bar -->
+    <LinearLayout
+        android:id="@+id/profileCard"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tvos_tile_bg"
+        android:paddingStart="8dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="6dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ccAvatar"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_profile_default"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="7dp"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/ccProfileName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apple TV"
+            android:textSize="12sp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/tvos_tile_text"
+            android:duplicateParentState="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/ccProfileStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20:45"
+            android:textSize="11sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/tvos_tile_subtext"
+            android:duplicateParentState="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <!-- 2x2 Quick Action Tiles Grid -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_marginBottom="4dp">
+
+        <!-- Tile: Uyut -->
+        <LinearLayout
+            android:id="@+id/tileSleep"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="2dp"
+            android:orientation="vertical"
+            android:background="@drawable/tvos_tile_bg"
+            android:padding="6dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_sleep"
+                android:tint="@color/tvos_tile_icon"
+                android:duplicateParentState="true"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/control_sleep"
+                android:textSize="11sp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/tvos_tile_text"
+                android:duplicateParentState="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uyku"
+                android:textSize="9sp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/tvos_tile_subtext"
+                android:duplicateParentState="true"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- Tile: Wi-Fi -->
+        <LinearLayout
+            android:id="@+id/tileWifi"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:orientation="vertical"
+            android:background="@drawable/tvos_tile_bg"
+            android:padding="6dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_wifi"
+                android:tint="@color/tvos_tile_icon"
+                android:duplicateParentState="true"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/wifi"
+                android:textSize="11sp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/tvos_tile_text"
+                android:duplicateParentState="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tileWifiStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/connected"
+                android:textSize="9sp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/tvos_tile_subtext"
+                android:duplicateParentState="true"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Row 2: Audio + Timer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_marginBottom="6dp">
+
+        <!-- Tile: Audio -->
+        <LinearLayout
+            android:id="@+id/tileAudio"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="2dp"
+            android:orientation="vertical"
+            android:background="@drawable/tvos_tile_bg"
+            android:padding="6dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/tileAudioIcon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_bell"
+                android:tint="@color/tvos_tile_icon"
+                android:duplicateParentState="true"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/sounds"
+                android:textSize="11sp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/tvos_tile_text"
+                android:duplicateParentState="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tileAudioStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sound_on"
+                android:textSize="9sp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/tvos_tile_subtext"
+                android:duplicateParentState="true"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- Tile: Timer -->
+        <LinearLayout
+            android:id="@+id/tileTimer"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:orientation="vertical"
+            android:background="@drawable/tvos_tile_bg"
+            android:padding="6dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_timer"
+                android:tint="@color/tvos_tile_icon"
+                android:duplicateParentState="true"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/control_timer"
+                android:textSize="11sp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/tvos_tile_text"
+                android:duplicateParentState="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tileTimerStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/control_timer_off"
+                android:textSize="9sp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/tvos_tile_subtext"
+                android:duplicateParentState="true"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="#1AFFFFFF"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Compact System Rows -->
+    <!-- Row: TV Settings -->
+    <LinearLayout
+        android:id="@+id/tileSettings"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tvos_tile_bg"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_settings"
+            android:tint="@color/tvos_tile_icon"
+            android:duplicateParentState="true"
+            android:layout_marginEnd="7dp"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_tv_settings"
+            android:textSize="11.5sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/tvos_tile_text"
+            android:duplicateParentState="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <!-- Row: Inputs -->
+    <LinearLayout
+        android:id="@+id/tileInputs"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tvos_tile_bg"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_input"
+            android:tint="@color/tvos_tile_icon"
+            android:duplicateParentState="true"
+            android:layout_marginEnd="7dp"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inputs"
+            android:textSize="11.5sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/tvos_tile_text"
+            android:duplicateParentState="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <!-- Row: Dock Edit -->
+    <LinearLayout
+        android:id="@+id/tileDockEdit"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tvos_tile_bg"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_apps"
+            android:tint="@color/tvos_tile_icon"
+            android:duplicateParentState="true"
+            android:layout_marginEnd="7dp"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dock_edit"
+            android:textSize="11.5sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/tvos_tile_text"
+            android:duplicateParentState="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <!-- Row: Reorder -->
+    <LinearLayout
+        android:id="@+id/tileReorder"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tvos_tile_bg"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_swap_vert"
+            android:tint="@color/tvos_tile_icon"
+            android:duplicateParentState="true"
+            android:layout_marginEnd="7dp"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reorder"
+            android:textSize="11.5sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/tvos_tile_text"
+            android:duplicateParentState="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <!-- Row: Wallpaper -->
+    <LinearLayout
+        android:id="@+id/tileWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tvos_tile_bg"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_picture"
+            android:tint="@color/tvos_tile_icon"
+            android:duplicateParentState="true"
+            android:layout_marginEnd="7dp"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/background"
+            android:textSize="11.5sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/tvos_tile_text"
+            android:duplicateParentState="true"
+            android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

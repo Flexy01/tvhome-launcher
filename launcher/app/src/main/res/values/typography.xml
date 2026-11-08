@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The launcher's type system: Inter in place of Apple's SF Pro. Display (the static 28pt cuts in res/font,
+     inter_display_*) for large type, Text (the 18pt cuts: inter_regular, inter_medium, inter_bold) for labels
+     and metadata, the way SF Pro Display and SF Pro Text split. Sources: fonts/Inter/static. Views use
+     these through android:textAppearance; Theme.TvHome makes Inter Text the default for everything else. -->
+<resources>
+    <!-- Large titles: the screensaver clock, big headings. -->
+    <style name="TextAppearance.TV.TitleLarge" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/inter_display_light</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+
+    <!-- Headlines and the Home clock: Display Medium with tabular figures, so the digits keep one width
+         and the time never shifts as it changes. -->
+    <style name="TextAppearance.TV.HeadlineMedium" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/inter_display_medium</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <!-- Body text: menus, settings rows. -->
+    <style name="TextAppearance.TV.BodyMedium" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <!-- Card labels and metadata: Text Medium in pure white; the view's alpha sets 70% / 100%. -->
+    <style name="TextAppearance.TV.LabelMedium" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+</resources>

@@ -1,0 +1,36 @@
+tools/venv/
+tools/adbkey/
+__pycache__/
+launcher/.gradle/
+launcher/build/
+launcher/app/build/
+launcher/local.properties
+# your own TV's dumps (serial, android_id, device names) stay local
+backup/
+.DS_Store
+
+# Generated install bundles and JVM crash reports stay out of contributions.
+*.apk
+*.aab
+launcher/hs_err_pid*.log
+launcher/replay_pid*.log
+
+# Keystores and release signing material
+*.keystore
+*.jks
+keystore.properties
+release.keystore
+
+# Personal & local test assets (PII, test probes)
+launcher/app/src/main/res/drawable-nodpi/profile_avatar.png
+profile_avatar.png
+launcher/app/src/test/java/com/gathin/tvhome/ShelfArtworkLiveAudit.java
+ShelfArtworkLiveAudit.java
+
+# Local device captures, hardware audits and benchmarks (600+ MB)
+docs/devices/
+
+# Browser MCP test artifacts and index outputs
+.playwright-mcp/
+graphify-out/
+launcher/graphify-out/

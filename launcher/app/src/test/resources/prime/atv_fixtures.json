@@ -1,0 +1,1920 @@
+[
+ {
+  "name": "row0",
+  "requestedGti": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "pageTitleId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "headerDetail": {
+   "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97": {
+    "catalogId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+    "title": "Kıyamet Z: Yeni Dünya",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2026,
+    "releaseDate": "20 Eki 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "1 sa 38 dk",
+    "duration": 5885,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_adventure",
+      "text": "Macera"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Carlos Alcaide"
+      },
+      {
+       "name": "Jose Maria Yazpik"
+      },
+      {
+       "name": "Julia Martínez"
+      },
+      {
+       "name": "Berta Vázquez"
+      },
+      {
+       "name": "Tamara Casellas"
+      },
+      {
+       "name": "Santiago Vaca Narvaja"
+      },
+      {
+       "name": "Mario Mayo"
+      },
+      {
+       "name": "Pedro Hernández"
+      },
+      {
+       "name": "Javier Godino"
+      },
+      {
+       "name": "Ve Mónica López"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Carles Torrens"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Kıyamet Z: Yeni Dünya",
+   "year": 2026,
+   "kind": "MOVIE",
+   "seriesTitle": "",
+   "seasonNumber": 0,
+   "cast": [
+    "Carlos Alcaide",
+    "Jose Maria Yazpik",
+    "Julia Martínez",
+    "Berta Vázquez",
+    "Tamara Casellas",
+    "Santiago Vaca Narvaja",
+    "Mario Mayo",
+    "Pedro Hernández",
+    "Javier Godino",
+    "Ve Mónica López"
+   ],
+   "genres": [
+    "Aksiyon",
+    "Macera"
+   ]
+  },
+  "trailerGti": "amzn1.dv.gti.ba10f0a3-e73f-4bce-9f38-e8aa798359ad"
+ },
+ {
+  "name": "row1",
+  "requestedGti": "amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59",
+  "pageTitleId": "amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59",
+  "headerDetail": {
+   "amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59": {
+    "catalogId": "amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59",
+    "title": "Kurtuluş projesi",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2026,
+    "releaseDate": "18 Mar 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Gençler.",
+     "displayText": "13+",
+     "id": "13+"
+    },
+    "runtime": "2 sa 36 dk",
+    "duration": 9407,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_drama",
+      "text": "Dram"
+     },
+     {
+      "id": "av_genre_science_fiction",
+      "text": "Bilim Kurgu"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Ryan Gosling"
+      },
+      {
+       "name": "Sandra Hüller"
+      },
+      {
+       "name": "James Ortiz"
+      },
+      {
+       "name": "Lionel Boyce"
+      },
+      {
+       "name": "Ken Leung"
+      },
+      {
+       "name": "Milana Vayntrub"
+      },
+      {
+       "name": "Priya Kansara"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Phil Lord"
+      },
+      {
+       "name": "Christopher Miller"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Kurtuluş projesi",
+   "year": 2026,
+   "kind": "MOVIE",
+   "seriesTitle": "",
+   "seasonNumber": 0,
+   "cast": [
+    "Ryan Gosling",
+    "Sandra Hüller",
+    "James Ortiz",
+    "Lionel Boyce",
+    "Ken Leung",
+    "Milana Vayntrub",
+    "Priya Kansara"
+   ],
+   "genres": [
+    "Aksiyon",
+    "Dram",
+    "Bilim Kurgu"
+   ]
+  },
+  "trailerGti": "amzn1.dv.gti.2a8401a2-8593-406a-adaa-1764533fcb5d"
+ },
+ {
+  "name": "row2",
+  "requestedGti": "amzn1.dv.gti.840eaf7a-5dd8-4acf-a6c9-b1946c138b85",
+  "pageTitleId": "amzn1.dv.gti.840eaf7a-5dd8-4acf-a6c9-b1946c138b85",
+  "headerDetail": {
+   "amzn1.dv.gti.840eaf7a-5dd8-4acf-a6c9-b1946c138b85": {
+    "catalogId": "amzn1.dv.gti.840eaf7a-5dd8-4acf-a6c9-b1946c138b85",
+    "title": "The Mentalist: Season 1",
+    "titleType": "season",
+    "entityType": "TV Show",
+    "releaseYear": 2008,
+    "releaseDate": "23 Eyl 2008",
+    "studios": [
+     "Warner Bros."
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "",
+    "parentTitle": "The Mentalist",
+    "seasonNumber": 1,
+    "genres": [
+     {
+      "id": "av_genre_drama",
+      "text": "Dram"
+     },
+     {
+      "id": "av_genre_suspense",
+      "text": "Gerilim"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Simon Baker"
+      },
+      {
+       "name": "Robin Tunney"
+      },
+      {
+       "name": "Tim Kang"
+      },
+      {
+       "name": "Owain Yeoman"
+      },
+      {
+       "name": "Amanda Righetti"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Chris Long"
+      },
+      {
+       "name": "Eric Laneuville"
+      },
+      {
+       "name": "John F. Showalter"
+      },
+      {
+       "name": "Charles Beeson"
+      },
+      {
+       "name": "Randy Zisk"
+      },
+      {
+       "name": "David Barrett"
+      },
+      {
+       "name": "John Polson"
+      },
+      {
+       "name": "Simon Baker"
+      },
+      {
+       "name": "Guy Ferland"
+      },
+      {
+       "name": "Geary McLeod"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "The Mentalist: Season 1",
+   "year": 2008,
+   "kind": "SERIES",
+   "seriesTitle": "The Mentalist",
+   "seasonNumber": 1,
+   "cast": [
+    "Simon Baker",
+    "Robin Tunney",
+    "Tim Kang",
+    "Owain Yeoman",
+    "Amanda Righetti"
+   ],
+   "genres": [
+    "Dram",
+    "Gerilim"
+   ]
+  },
+  "trailerGti": null
+ },
+ {
+  "name": "row3",
+  "requestedGti": "amzn1.dv.gti.52f45616-4e52-4cc1-b9ba-268259f916b7",
+  "pageTitleId": "amzn1.dv.gti.52f45616-4e52-4cc1-b9ba-268259f916b7",
+  "headerDetail": {
+   "amzn1.dv.gti.52f45616-4e52-4cc1-b9ba-268259f916b7": {
+    "catalogId": "amzn1.dv.gti.52f45616-4e52-4cc1-b9ba-268259f916b7",
+    "title": "Jurassic World: Yeniden Doğuş",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2025,
+    "releaseDate": "4 Tem 2025",
+    "studios": [
+     "Universal Pictures"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Gençler.",
+     "displayText": "13+",
+     "id": "13+"
+    },
+    "runtime": "2 sa 13 dk",
+    "duration": 8016,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_suspense",
+      "text": "Gerilim"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Scarlett Johansson"
+      },
+      {
+       "name": "Mahershala Ali"
+      },
+      {
+       "name": "Jonathan Bailey"
+      },
+      {
+       "name": "Rupert Friend"
+      },
+      {
+       "name": "Manuel Garcia-Rulfo"
+      },
+      {
+       "name": "Ed Skrein"
+      },
+      {
+       "name": "David Iacono"
+      },
+      {
+       "name": "Audrina Miranda"
+      },
+      {
+       "name": "Philippine Velge"
+      },
+      {
+       "name": "Bechir Sylvain"
+      },
+      {
+       "name": "Luna Blaise"
+      },
+      {
+       "name": "Adam Loxley"
+      },
+      {
+       "name": "Niamh Finlay"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Gareth Edwards"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Jurassic World: Yeniden Doğuş",
+   "year": 2025,
+   "kind": "MOVIE",
+   "seriesTitle": "",
+   "seasonNumber": 0,
+   "cast": [
+    "Scarlett Johansson",
+    "Mahershala Ali",
+    "Jonathan Bailey",
+    "Rupert Friend",
+    "Manuel Garcia-Rulfo",
+    "Ed Skrein",
+    "David Iacono",
+    "Audrina Miranda",
+    "Philippine Velge",
+    "Bechir Sylvain",
+    "Luna Blaise",
+    "Adam Loxley",
+    "Niamh Finlay"
+   ],
+   "genres": [
+    "Aksiyon",
+    "Gerilim"
+   ]
+  },
+  "trailerGti": "amzn1.dv.gti.52f45616-4e52-4cc1-b9ba-268259f916b7"
+ },
+ {
+  "name": "row4",
+  "requestedGti": "amzn1.dv.gti.337cb8c2-e240-49d5-b993-c3e665dbd5fa",
+  "pageTitleId": "amzn1.dv.gti.337cb8c2-e240-49d5-b993-c3e665dbd5fa",
+  "headerDetail": {
+   "amzn1.dv.gti.337cb8c2-e240-49d5-b993-c3e665dbd5fa": {
+    "catalogId": "amzn1.dv.gti.337cb8c2-e240-49d5-b993-c3e665dbd5fa",
+    "title": "Freddy'nin Pizza Dükkanında Beş Gece 2",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2025,
+    "releaseDate": "5 Ara 2025",
+    "studios": [
+     "Discovery Global Horror"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Gençler.",
+     "displayText": "13+",
+     "id": "13+"
+    },
+    "runtime": "1 sa 40 dk",
+    "duration": 6013,
+    "genres": [
+     {
+      "id": "av_genre_horror",
+      "text": "Korku"
+     },
+     {
+      "id": "av_genre_suspense",
+      "text": "Gerilim"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Josh Hutcherson"
+      },
+      {
+       "name": "Elizabeth Lail"
+      },
+      {
+       "name": "Piper Rubio"
+      },
+      {
+       "name": "Wayne Knight"
+      },
+      {
+       "name": "Skeet Ulrich"
+      },
+      {
+       "name": "Matthew Lillard"
+      },
+      {
+       "name": "Mckenna Grace"
+      },
+      {
+       "name": "Freddy Carter"
+      },
+      {
+       "name": "Theodus Crane"
+      },
+      {
+       "name": "Teo Briones"
+      },
+      {
+       "name": "David Andrew Calvillo"
+      },
+      {
+       "name": "Audrey Lynn Marie"
+      },
+      {
+       "name": "Miriam Spumpkin"
+      },
+      {
+       "name": "Han Soto"
+      },
+      {
+       "name": "Grant Feely"
+      },
+      {
+       "name": "Gavin Borders"
+      },
+      {
+       "name": "Bentley Cooper"
+      },
+      {
+       "name": "Carl Palmer"
+      },
+      {
+       "name": "Ann Mahoney"
+      },
+      {
+       "name": "Vivian Atencio"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Emma Tammi"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Freddy'nin Pizza Dükkanında Beş Gece 2",
+   "year": 2025,
+   "kind": "MOVIE",
+   "seriesTitle": "",
+   "seasonNumber": 0,
+   "cast": [
+    "Josh Hutcherson",
+    "Elizabeth Lail",
+    "Piper Rubio",
+    "Wayne Knight",
+    "Skeet Ulrich",
+    "Matthew Lillard",
+    "Mckenna Grace",
+    "Freddy Carter",
+    "Theodus Crane",
+    "Teo Briones",
+    "David Andrew Calvillo",
+    "Audrey Lynn Marie",
+    "Miriam Spumpkin",
+    "Han Soto",
+    "Grant Feely",
+    "Gavin Borders",
+    "Bentley Cooper",
+    "Carl Palmer",
+    "Ann Mahoney",
+    "Vivian Atencio"
+   ],
+   "genres": [
+    "Korku",
+    "Gerilim"
+   ]
+  },
+  "trailerGti": "amzn1.dv.gti.337cb8c2-e240-49d5-b993-c3e665dbd5fa"
+ },
+ {
+  "name": "row5",
+  "requestedGti": "amzn1.dv.gti.b114d3d0-114d-4873-ba9f-71d446cc9fd2",
+  "pageTitleId": "amzn1.dv.gti.b114d3d0-114d-4873-ba9f-71d446cc9fd2",
+  "headerDetail": {
+   "amzn1.dv.gti.b114d3d0-114d-4873-ba9f-71d446cc9fd2": {
+    "catalogId": "amzn1.dv.gti.b114d3d0-114d-4873-ba9f-71d446cc9fd2",
+    "title": "Kâinatın Hâkimleri",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2026,
+    "releaseDate": "22 Tem 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Gençler.",
+     "displayText": "13+",
+     "id": "13+"
+    },
+    "runtime": "2 sa 23 dk",
+    "duration": 8634,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_fantasy",
+      "text": "Fantastik"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Nicholas Galitzine"
+      },
+      {
+       "name": "Camila Mendes"
+      },
+      {
+       "name": "Alison Brie"
+      },
+      {
+       "name": "James Purefoy"
+      },
+      {
+       "name": "Morena Baccarin"
+      },
+      {
+       "name": "Jóhannes Haukur Jóhannesson"
+      },
+      {
+       "name": "Kristen Wiig"
+      },
+      {
+       "name": "Jared Leto"
+      },
+      {
+       "name": "Idris Elba"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Travis Knight"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Kâinatın Hâkimleri",
+   "year": 2026,
+   "kind": "MOVIE",
+   "seriesTitle": "",
+   "seasonNumber": 0,
+   "cast": [
+    "Nicholas Galitzine",
+    "Camila Mendes",
+    "Alison Brie",
+    "James Purefoy",
+    "Morena Baccarin",
+    "Jóhannes Haukur Jóhannesson",
+    "Kristen Wiig",
+    "Jared Leto",
+    "Idris Elba"
+   ],
+   "genres": [
+    "Aksiyon",
+    "Fantastik"
+   ]
+  },
+  "trailerGti": "amzn1.dv.gti.2d7c1b20-6f6e-4245-b64f-9fecc36f2145"
+ },
+ {
+  "name": "row6",
+  "requestedGti": "amzn1.dv.gti.e4b42705-401a-2950-ad75-def855aed3b0",
+  "pageTitleId": "amzn1.dv.gti.e4b42705-401a-2950-ad75-def855aed3b0",
+  "headerDetail": {
+   "amzn1.dv.gti.e4b42705-401a-2950-ad75-def855aed3b0": {
+    "catalogId": "amzn1.dv.gti.e4b42705-401a-2950-ad75-def855aed3b0",
+    "title": "Ted",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2012,
+    "releaseDate": "21 Eyl 2012",
+    "studios": [
+     "Discovery Global"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "1 sa 36 dk",
+    "duration": 5788,
+    "genres": [
+     {
+      "id": "av_genre_comedy",
+      "text": "Komedi"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Mark Wahlberg"
+      },
+      {
+       "name": "Mila Kunis"
+      },
+      {
+       "name": "Seth MacFarlane"
+      },
+      {
+       "name": "Joel McHale"
+      },
+      {
+       "name": "Giovanni Ribisi"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Seth MacFarlane"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Ted",
+   "year": 2012,
+   "kind": "MOVIE",
+   "seriesTitle": "",
+   "seasonNumber": 0,
+   "cast": [
+    "Mark Wahlberg",
+    "Mila Kunis",
+    "Seth MacFarlane",
+    "Joel McHale",
+    "Giovanni Ribisi"
+   ],
+   "genres": [
+    "Komedi"
+   ]
+  },
+  "trailerGti": "amzn1.dv.gti.e4b42705-401a-2950-ad75-def855aed3b0"
+ },
+ {
+  "name": "row7",
+  "requestedGti": "amzn1.dv.gti.f5b53647-e608-46ed-8228-a609fd9b2d7e",
+  "pageTitleId": "amzn1.dv.gti.f5b53647-e608-46ed-8228-a609fd9b2d7e",
+  "headerDetail": {
+   "amzn1.dv.gti.f5b53647-e608-46ed-8228-a609fd9b2d7e": {
+    "catalogId": "amzn1.dv.gti.f5b53647-e608-46ed-8228-a609fd9b2d7e",
+    "title": "Spider-Noir 1. Sezon",
+    "titleType": "season",
+    "entityType": "TV Show",
+    "releaseYear": 2026,
+    "releaseDate": "27 May 2026",
+    "studios": [
+     "Amazon Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "",
+    "parentTitle": "Spider-Noir",
+    "seasonNumber": 1,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_drama",
+      "text": "Dram"
+     },
+     {
+      "id": "av_genre_suspense",
+      "text": "Gerilim"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Nicolas Cage"
+      },
+      {
+       "name": "Lamorne Morris"
+      },
+      {
+       "name": "Li Jun Li"
+      },
+      {
+       "name": "Karen Rodriguez"
+      },
+      {
+       "name": "Abraham Popoola"
+      },
+      {
+       "name": "Jack Huston"
+      },
+      {
+       "name": "Brendan Gleeson"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Harry Bradbeer"
+      },
+      {
+       "name": "Nzingha Stewart"
+      },
+      {
+       "name": "Alethea Jones"
+      },
+      {
+       "name": "Greg Yaitanes"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Spider-Noir 1. Sezon",
+   "year": 2026,
+   "kind": "SERIES",
+   "seriesTitle": "Spider-Noir",
+   "seasonNumber": 1,
+   "cast": [
+    "Nicolas Cage",
+    "Lamorne Morris",
+    "Li Jun Li",
+    "Karen Rodriguez",
+    "Abraham Popoola",
+    "Jack Huston",
+    "Brendan Gleeson"
+   ],
+   "genres": [
+    "Aksiyon",
+    "Dram",
+    "Gerilim"
+   ]
+  },
+  "trailerGti": "amzn1.dv.gti.eb9d7719-7bae-4a70-900c-284817dd5fe7"
+ },
+ {
+  "name": "row8",
+  "requestedGti": "amzn1.dv.gti.7ea9f6d9-bdc8-9b2e-97a9-c341306e36ef",
+  "pageTitleId": "amzn1.dv.gti.7ea9f6d9-bdc8-9b2e-97a9-c341306e36ef",
+  "headerDetail": {
+   "amzn1.dv.gti.7ea9f6d9-bdc8-9b2e-97a9-c341306e36ef": {
+    "catalogId": "amzn1.dv.gti.7ea9f6d9-bdc8-9b2e-97a9-c341306e36ef",
+    "title": "Jurassic Park",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 1993,
+    "releaseDate": "17 Eyl 1993",
+    "studios": [
+     "Discovery Global"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "2 sa 1 dk",
+    "duration": 7274,
+    "genres": [
+     {
+      "id": "av_genre_science_fiction",
+      "text": "Bilim Kurgu"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Sam Neill"
+      },
+      {
+       "name": "Laura Dern"
+      },
+      {
+       "name": "Jeff Goldblum"
+      },
+      {
+       "name": "Richard Attenborough"
+      },
+      {
+       "name": "Bob Peck"
+      },
+      {
+       "name": "Joseph Mazzello"
+      },
+      {
+       "name": "Gerald R Molen"
+      },
+      {
+       "name": "Ariana Richards"
+      },
+      {
+       "name": "Martin Ferrero"
+      },
+      {
+       "name": "Wayne Knight"
+      },
+      {
+       "name": "B.D. Wong"
+      },
+      {
+       "name": "Miguel Sandoval"
+      },
+      {
+       "name": "Samuel L. Jackson"
+      },
+      {
+       "name": "Cameron Thor"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Steven Spielberg"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Jurassic Park",
+   "year": 1993,
+   "kind": "MOVIE",
+   "seriesTitle": "",
+   "seasonNumber": 0,
+   "cast": [
+    "Sam Neill",
+    "Laura Dern",
+    "Jeff Goldblum",
+    "Richard Attenborough",
+    "Bob Peck",
+    "Joseph Mazzello",
+    "Gerald R Molen",
+    "Ariana Richards",
+    "Martin Ferrero",
+    "Wayne Knight",
+    "B.D. Wong",
+    "Miguel Sandoval",
+    "Samuel L. Jackson",
+    "Cameron Thor"
+   ],
+   "genres": [
+    "Bilim Kurgu"
+   ]
+  },
+  "trailerGti": "amzn1.dv.gti.7ea9f6d9-bdc8-9b2e-97a9-c341306e36ef"
+ },
+ {
+  "name": "row9",
+  "requestedGti": "amzn1.dv.gti.38223bd0-9dc7-4ae9-be02-e7256918b3d9",
+  "pageTitleId": "amzn1.dv.gti.38223bd0-9dc7-4ae9-be02-e7256918b3d9",
+  "headerDetail": {
+   "amzn1.dv.gti.38223bd0-9dc7-4ae9-be02-e7256918b3d9": {
+    "catalogId": "amzn1.dv.gti.38223bd0-9dc7-4ae9-be02-e7256918b3d9",
+    "title": "Aşk Hipotezi",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2026,
+    "releaseDate": "23 Eyl 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "1 sa 52 dk",
+    "duration": 6724,
+    "genres": [
+     {
+      "id": "av_genre_young_adult_audience",
+      "text": "Genç Yetişkin Kitle"
+     },
+     {
+      "id": "av_genre_comedy",
+      "text": "Komedi"
+     },
+     {
+      "id": "av_genre_romance",
+      "text": "Romantik"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "LILI REINHART"
+      },
+      {
+       "name": "TOM BATEMAN"
+      },
+      {
+       "name": "RACHEL MARSH,"
+      },
+      {
+       "name": "JABOUKIE YOUNG-WHITE"
+      },
+      {
+       "name": "NICHOLAS DUVERNAY"
+      },
+      {
+       "name": "ARTY FROUSHAN"
+      }
+     ],
+     "directors": [
+      {
+       "name": "CLAIRE SCANLON"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Aşk Hipotezi",
+   "year": 2026,
+   "kind": "MOVIE",
+   "seriesTitle": "",
+   "seasonNumber": 0,
+   "cast": [
+    "LILI REINHART",
+    "TOM BATEMAN",
+    "RACHEL MARSH,",
+    "JABOUKIE YOUNG-WHITE",
+    "NICHOLAS DUVERNAY",
+    "ARTY FROUSHAN"
+   ],
+   "genres": [
+    "Genç Yetişkin Kitle",
+    "Komedi",
+    "Romantik"
+   ]
+  },
+  "trailerGti": "amzn1.dv.gti.fa7814c4-16b4-4a98-b3a1-77b418e857ec"
+ },
+ {
+  "name": "row10",
+  "requestedGti": "amzn1.dv.gti.526198e4-d03e-4ba0-8232-c507b31dbbad",
+  "pageTitleId": "amzn1.dv.gti.526198e4-d03e-4ba0-8232-c507b31dbbad",
+  "headerDetail": {
+   "amzn1.dv.gti.526198e4-d03e-4ba0-8232-c507b31dbbad": {
+    "catalogId": "amzn1.dv.gti.526198e4-d03e-4ba0-8232-c507b31dbbad",
+    "title": "Reacher - Sezon 4",
+    "titleType": "season",
+    "entityType": "TV Show",
+    "releaseYear": 2026,
+    "releaseDate": "12 Ağu 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "",
+    "parentTitle": "Reacher",
+    "seasonNumber": 4,
+    "genres": [
+     {
+      "id": "av_genre_drama",
+      "text": "Dram"
+     },
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Alan Ritchson"
+      },
+      {
+       "name": "Sydelle Noel"
+      },
+      {
+       "name": "Agnez Mo"
+      },
+      {
+       "name": "Anggun"
+      },
+      {
+       "name": "Christopher Rodriguez-Marquette"
+      },
+      {
+       "name": "Kevin Corrigan"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Sam Hill"
+      },
+      {
+       "name": "Gary Fleder"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Reacher - Sezon 4",
+   "year": 2026,
+   "kind": "SERIES",
+   "seriesTitle": "Reacher",
+   "seasonNumber": 4,
+   "cast": [
+    "Alan Ritchson",
+    "Sydelle Noel",
+    "Agnez Mo",
+    "Anggun",
+    "Christopher Rodriguez-Marquette",
+    "Kevin Corrigan"
+   ],
+   "genres": [
+    "Dram",
+    "Aksiyon"
+   ]
+  },
+  "trailerGti": "amzn1.dv.gti.15b862c8-c178-4cbe-a969-c3f38848471c"
+ },
+ {
+  "name": "row11",
+  "requestedGti": "amzn1.dv.gti.58a9f75d-ff98-6a86-fc1e-539281902600",
+  "pageTitleId": "amzn1.dv.gti.58a9f75d-ff98-6a86-fc1e-539281902600",
+  "headerDetail": {
+   "amzn1.dv.gti.58a9f75d-ff98-6a86-fc1e-539281902600": {
+    "catalogId": "amzn1.dv.gti.58a9f75d-ff98-6a86-fc1e-539281902600",
+    "title": "Jurassic World",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2015,
+    "releaseDate": "12 Haz 2015",
+    "studios": [
+     "Discovery Global Action"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Gençler.",
+     "displayText": "13+",
+     "id": "13+"
+    },
+    "runtime": "1 sa 56 dk",
+    "duration": 7003,
+    "genres": [
+     {
+      "id": "av_genre_science_fiction",
+      "text": "Bilim Kurgu"
+     },
+     {
+      "id": "av_genre_fantasy",
+      "text": "Fantastik"
+     },
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_adventure",
+      "text": "Macera"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Chris Pratt"
+      },
+      {
+       "name": "Bryce Dallas Howard"
+      },
+      {
+       "name": "Vincent D'Onofrio"
+      },
+      {
+       "name": "Ty Simpkins"
+      },
+      {
+       "name": "Nick Robinson"
+      },
+      {
+       "name": "Omar Sy"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Colin Trevorrow"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Jurassic World",
+   "year": 2015,
+   "kind": "MOVIE",
+   "seriesTitle": "",
+   "seasonNumber": 0,
+   "cast": [
+    "Chris Pratt",
+    "Bryce Dallas Howard",
+    "Vincent D'Onofrio",
+    "Ty Simpkins",
+    "Nick Robinson",
+    "Omar Sy"
+   ],
+   "genres": [
+    "Bilim Kurgu",
+    "Fantastik",
+    "Aksiyon",
+    "Macera"
+   ]
+  },
+  "trailerGti": "amzn1.dv.gti.9c4527ec-cfd0-49ef-b18f-88d900508571"
+ },
+ {
+  "name": "neg-page-canonical",
+  "requestedGti": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "pageTitleId": "amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59",
+  "headerDetail": {
+   "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97": {
+    "catalogId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+    "title": "Kıyamet Z: Yeni Dünya",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2026,
+    "releaseDate": "20 Eki 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "1 sa 38 dk",
+    "duration": 5885,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_adventure",
+      "text": "Macera"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Carlos Alcaide"
+      },
+      {
+       "name": "Jose Maria Yazpik"
+      },
+      {
+       "name": "Julia Martínez"
+      },
+      {
+       "name": "Berta Vázquez"
+      },
+      {
+       "name": "Tamara Casellas"
+      },
+      {
+       "name": "Santiago Vaca Narvaja"
+      },
+      {
+       "name": "Mario Mayo"
+      },
+      {
+       "name": "Pedro Hernández"
+      },
+      {
+       "name": "Javier Godino"
+      },
+      {
+       "name": "Ve Mónica López"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Carles Torrens"
+      }
+     ]
+    }
+   }
+  },
+  "expect": null,
+  "trailerGti": null
+ },
+ {
+  "name": "neg-catalogid-mismatch",
+  "requestedGti": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "pageTitleId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "headerDetail": {
+   "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97": {
+    "catalogId": "amzn1.dv.gti.00000000-0000-4000-8000-000000000001",
+    "title": "Kıyamet Z: Yeni Dünya",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2026,
+    "releaseDate": "20 Eki 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "1 sa 38 dk",
+    "duration": 5885,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_adventure",
+      "text": "Macera"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Carlos Alcaide"
+      },
+      {
+       "name": "Jose Maria Yazpik"
+      },
+      {
+       "name": "Julia Martínez"
+      },
+      {
+       "name": "Berta Vázquez"
+      },
+      {
+       "name": "Tamara Casellas"
+      },
+      {
+       "name": "Santiago Vaca Narvaja"
+      },
+      {
+       "name": "Mario Mayo"
+      },
+      {
+       "name": "Pedro Hernández"
+      },
+      {
+       "name": "Javier Godino"
+      },
+      {
+       "name": "Ve Mónica López"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Carles Torrens"
+      }
+     ]
+    }
+   }
+  },
+  "expect": null,
+  "trailerGti": null
+ },
+ {
+  "name": "neg-item-key-mismatch",
+  "requestedGti": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "pageTitleId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "headerDetail": {
+   "amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59": {
+    "catalogId": "amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59",
+    "title": "Kurtuluş projesi",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2026,
+    "releaseDate": "18 Mar 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Gençler.",
+     "displayText": "13+",
+     "id": "13+"
+    },
+    "runtime": "2 sa 36 dk",
+    "duration": 9407,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_drama",
+      "text": "Dram"
+     },
+     {
+      "id": "av_genre_science_fiction",
+      "text": "Bilim Kurgu"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Ryan Gosling"
+      },
+      {
+       "name": "Sandra Hüller"
+      },
+      {
+       "name": "James Ortiz"
+      },
+      {
+       "name": "Lionel Boyce"
+      },
+      {
+       "name": "Ken Leung"
+      },
+      {
+       "name": "Milana Vayntrub"
+      },
+      {
+       "name": "Priya Kansara"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Phil Lord"
+      },
+      {
+       "name": "Christopher Miller"
+      }
+     ]
+    }
+   }
+  },
+  "expect": null,
+  "trailerGti": null
+ },
+ {
+  "name": "neg-trailer-alias",
+  "requestedGti": "amzn1.dv.gti.ba10f0a3-e73f-4bce-9f38-e8aa798359ad",
+  "pageTitleId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "headerDetail": {
+   "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97": {
+    "catalogId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+    "title": "Kıyamet Z: Yeni Dünya",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2026,
+    "releaseDate": "20 Eki 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "1 sa 38 dk",
+    "duration": 5885,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_adventure",
+      "text": "Macera"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Carlos Alcaide"
+      },
+      {
+       "name": "Jose Maria Yazpik"
+      },
+      {
+       "name": "Julia Martínez"
+      },
+      {
+       "name": "Berta Vázquez"
+      },
+      {
+       "name": "Tamara Casellas"
+      },
+      {
+       "name": "Santiago Vaca Narvaja"
+      },
+      {
+       "name": "Mario Mayo"
+      },
+      {
+       "name": "Pedro Hernández"
+      },
+      {
+       "name": "Javier Godino"
+      },
+      {
+       "name": "Ve Mónica López"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Carles Torrens"
+      }
+     ]
+    }
+   }
+  },
+  "expect": null,
+  "trailerGti": null
+ },
+ {
+  "name": "neg-wrong-production",
+  "requestedGti": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "pageTitleId": "amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59",
+  "headerDetail": {
+   "amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59": {
+    "catalogId": "amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59",
+    "title": "Kurtuluş projesi",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2026,
+    "releaseDate": "18 Mar 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Gençler.",
+     "displayText": "13+",
+     "id": "13+"
+    },
+    "runtime": "2 sa 36 dk",
+    "duration": 9407,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_drama",
+      "text": "Dram"
+     },
+     {
+      "id": "av_genre_science_fiction",
+      "text": "Bilim Kurgu"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Ryan Gosling"
+      },
+      {
+       "name": "Sandra Hüller"
+      },
+      {
+       "name": "James Ortiz"
+      },
+      {
+       "name": "Lionel Boyce"
+      },
+      {
+       "name": "Ken Leung"
+      },
+      {
+       "name": "Milana Vayntrub"
+      },
+      {
+       "name": "Priya Kansara"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Phil Lord"
+      },
+      {
+       "name": "Christopher Miller"
+      }
+     ]
+    }
+   }
+  },
+  "expect": null,
+  "trailerGti": null
+ },
+ {
+  "name": "neg-no-detail",
+  "requestedGti": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "pageTitleId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "headerDetail": {},
+  "expect": null,
+  "trailerGti": null
+ },
+ {
+  "name": "neg-missing-year",
+  "requestedGti": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "pageTitleId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "headerDetail": {
+   "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97": {
+    "catalogId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+    "title": "Kıyamet Z: Yeni Dünya",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseDate": "20 Eki 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "1 sa 38 dk",
+    "duration": 5885,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_adventure",
+      "text": "Macera"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Carlos Alcaide"
+      },
+      {
+       "name": "Jose Maria Yazpik"
+      },
+      {
+       "name": "Julia Martínez"
+      },
+      {
+       "name": "Berta Vázquez"
+      },
+      {
+       "name": "Tamara Casellas"
+      },
+      {
+       "name": "Santiago Vaca Narvaja"
+      },
+      {
+       "name": "Mario Mayo"
+      },
+      {
+       "name": "Pedro Hernández"
+      },
+      {
+       "name": "Javier Godino"
+      },
+      {
+       "name": "Ve Mónica López"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Carles Torrens"
+      }
+     ]
+    }
+   }
+  },
+  "expect": null,
+  "trailerGti": null
+ },
+ {
+  "name": "neg-missing-title",
+  "requestedGti": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "pageTitleId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "headerDetail": {
+   "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97": {
+    "catalogId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2026,
+    "releaseDate": "20 Eki 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "1 sa 38 dk",
+    "duration": 5885,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_adventure",
+      "text": "Macera"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Carlos Alcaide"
+      },
+      {
+       "name": "Jose Maria Yazpik"
+      },
+      {
+       "name": "Julia Martínez"
+      },
+      {
+       "name": "Berta Vázquez"
+      },
+      {
+       "name": "Tamara Casellas"
+      },
+      {
+       "name": "Santiago Vaca Narvaja"
+      },
+      {
+       "name": "Mario Mayo"
+      },
+      {
+       "name": "Pedro Hernández"
+      },
+      {
+       "name": "Javier Godino"
+      },
+      {
+       "name": "Ve Mónica López"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Carles Torrens"
+      }
+     ]
+    }
+   }
+  },
+  "expect": null,
+  "trailerGti": null
+ },
+ {
+  "name": "neg-missing-type",
+  "requestedGti": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "pageTitleId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "headerDetail": {
+   "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97": {
+    "catalogId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+    "title": "Kıyamet Z: Yeni Dünya",
+    "releaseYear": 2026,
+    "releaseDate": "20 Eki 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "1 sa 38 dk",
+    "duration": 5885,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_adventure",
+      "text": "Macera"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Carlos Alcaide"
+      },
+      {
+       "name": "Jose Maria Yazpik"
+      },
+      {
+       "name": "Julia Martínez"
+      },
+      {
+       "name": "Berta Vázquez"
+      },
+      {
+       "name": "Tamara Casellas"
+      },
+      {
+       "name": "Santiago Vaca Narvaja"
+      },
+      {
+       "name": "Mario Mayo"
+      },
+      {
+       "name": "Pedro Hernández"
+      },
+      {
+       "name": "Javier Godino"
+      },
+      {
+       "name": "Ve Mónica López"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Carles Torrens"
+      }
+     ]
+    }
+   }
+  },
+  "expect": null,
+  "trailerGti": null
+ },
+ {
+  "name": "empty-cast-name",
+  "requestedGti": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "pageTitleId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+  "headerDetail": {
+   "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97": {
+    "catalogId": "amzn1.dv.gti.8a132dd0-3df2-4bab-93ab-4e64bd720a97",
+    "title": "Kıyamet Z: Yeni Dünya",
+    "titleType": "movie",
+    "entityType": "Movie",
+    "releaseYear": 2026,
+    "releaseDate": "20 Eki 2026",
+    "studios": [
+     "Amazon MGM Studios"
+    ],
+    "ratingBadge": {
+     "__type": "atv.wps#AmazonMaturityRatingBadge",
+     "description": "Genç Yetişkinler.",
+     "displayText": "16+",
+     "id": "16+"
+    },
+    "runtime": "1 sa 38 dk",
+    "duration": 5885,
+    "genres": [
+     {
+      "id": "av_genre_action",
+      "text": "Aksiyon"
+     },
+     {
+      "id": "av_genre_adventure",
+      "text": "Macera"
+     }
+    ],
+    "contributors": {
+     "cast": [
+      {
+       "name": "Carlos Alcaide"
+      },
+      {
+       "name": "   "
+      },
+      {
+       "name": "Jose Maria Yazpik"
+      },
+      {
+       "name": "Julia Martínez"
+      },
+      {
+       "name": "Berta Vázquez"
+      },
+      {
+       "name": "Tamara Casellas"
+      },
+      {
+       "name": "Santiago Vaca Narvaja"
+      },
+      {
+       "name": "Mario Mayo"
+      },
+      {
+       "name": "Pedro Hernández"
+      },
+      {
+       "name": "Javier Godino"
+      },
+      {
+       "name": "Ve Mónica López"
+      }
+     ],
+     "directors": [
+      {
+       "name": "Carles Torrens"
+      }
+     ]
+    }
+   }
+  },
+  "expect": {
+   "title": "Kıyamet Z: Yeni Dünya",
+   "year": 2026,
+   "kind": "MOVIE",
+   "seriesTitle": "",
+   "seasonNumber": 0,
+   "cast": [
+    "Carlos Alcaide",
+    "Jose Maria Yazpik",
+    "Julia Martínez",
+    "Berta Vázquez",
+    "Tamara Casellas",
+    "Santiago Vaca Narvaja",
+    "Mario Mayo",
+    "Pedro Hernández",
+    "Javier Godino",
+    "Ve Mónica López"
+   ],
+   "genres": [
+    "Aksiyon",
+    "Macera"
+   ]
+  },
+  "trailerGti": null
+ }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- tvOS 27 Control Center tile background: smoked glass at rest, crisp white when focused -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#F7FFFFFF" />
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#D0FFFFFF" />
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#4D1A1E26" />
+            <stroke android:width="0.8dp" android:color="#33FFFFFF" />
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+</selector>

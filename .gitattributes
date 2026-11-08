@@ -1,0 +1,22 @@
+# Auto-detect text files and normalize line endings on checkout
+* text=auto
+
+# Enforce LF on POSIX shell scripts and Gradle wrappers across all platforms
+*.sh text eol=lf
+gradlew text eol=lf
+
+# Enforce CRLF on Windows batch and PowerShell scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.gz binary
+*.jar binary
+*.apk binary

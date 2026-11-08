@@ -1,0 +1,37 @@
+name: Feature or Enhancement Proposal
+description: Propose a new feature, provider integration, or visual improvement
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Contribution Area
+      options:
+        - Device Compatibility & Performance (1 GB RAM)
+        - tvOS Interface & Animations
+        - Content Provider & Top Shelf
+        - Localization & Accessibility
+        - Tools, Scripts, or Debloat Lists
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Motivation
+      description: What problem are you trying to solve, or what opportunity do you see?
+      placeholder: Describe the current limitation or user experience goal...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution or Approach
+      description: How should this work? Please keep 1 GB RAM constraints and D-pad remote navigation in mind.
+      placeholder: Explain your architectural approach, UI changes, or provider integration...
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context, Devices, or Mockups
+      description: Optional. TV models, API documentation, screenshots, or alternatives considered.

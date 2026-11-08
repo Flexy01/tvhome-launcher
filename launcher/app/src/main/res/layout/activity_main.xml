@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000">
+
+    <!-- Time-of-day backdrop, drawn once a minute (config.xml sky_intensity; 0 keeps it hidden). -->
+    <com.gathin.tvhome.SkyView
+        android:id="@+id/sky"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no" />
+
+    <!-- Focused app artwork and its static background fill the shelf. -->
+    <ImageView
+        android:id="@+id/heroArt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/top_shelf_fallback"
+        android:scaleType="fitXY"
+        android:alpha="0"
+        android:visibility="visible"
+        android:importantForAccessibility="no" />
+
+    <!-- Ambient glow in the colour of the focused dock app. -->
+    <View
+        android:id="@+id/ambient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0" />
+
+    <!-- Race-weekend panel (a theme's race_calendar, see RaceWeekend): in the free space under the clock,
+         shown only from shortly before a weekend's first session until the race is over. Updated once a
+         minute with the clock, never animated. -->
+    <LinearLayout
+        android:id="@+id/racePanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="158dp"
+        android:orientation="vertical"
+        android:focusable="false"
+        android:importantForAccessibility="no"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- A short kerb-red bar, the panel's one accent. -->
+            <View
+                android:layout_width="3dp"
+                android:layout_height="13dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/race_bar" />
+
+            <TextView
+                android:id="@+id/raceKicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#B3FFFFFF"
+                android:textSize="12sp"
+                android:fontFamily="@font/inter_medium"
+                android:letterSpacing="0.22"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/raceHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:textColor="#FFFFFFFF"
+            android:textSize="34sp"
+            android:fontFamily="@font/inter_display_light"
+            android:letterSpacing="-0.01"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/raceSessions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:singleLine="true"
+            android:textColor="#99FFFFFF"
+            android:textSize="12sp"
+            android:fontFamily="@font/inter_medium"
+            android:letterSpacing="0.12" />
+    </LinearLayout>
+
+    <!-- The lower gradient stays subtle under the shelf, dock and grid. -->
+    <View
+        android:id="@+id/heroScrim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:importantForAccessibility="no" />
+
+    <!-- Top shelf: the focused dock app's logo alongside its name. -->
+    <LinearLayout
+        android:id="@+id/hero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:orientation="vertical"
+        android:alpha="0">
+
+        <!-- tvOS secondary service/brand eyebrow badge -->
+        <TextView
+            android:id="@+id/heroBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginBottom="6dp"
+            android:textColor="#CCFFFFFF"
+            android:textSize="13sp"
+            android:fontFamily="@font/inter_bold"
+            android:letterSpacing="0.14"
+            android:textAllCaps="true"
+            android:includeFontPadding="false"
+            android:visibility="gone"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/heroIdentity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/heroName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="640dp"
+                android:ellipsize="end"
+                android:textColor="#FFFFFFFF"
+                android:textSize="42sp"
+                android:fontFamily="@font/inter_display_light"
+                android:letterSpacing="-0.02"
+                android:includeFontPadding="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- tvOS content metadata / description line -->
+        <TextView
+            android:id="@+id/heroMeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:maxWidth="560dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#99FFFFFF"
+            android:textSize="15sp"
+            android:fontFamily="@font/inter_display_light"
+            android:includeFontPadding="false"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/heroDots"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- The header floats over a full-height grid: MainActivity slides it up with the grid's scroll, so it
+         leaves the screen as you scroll down to the apps and comes back at the top, as on Apple TV.
+         32dp side margins: six tiles a row at the largest size that keeps normal gaps (AppAdapter.tileWidthPx). -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <!-- tvOS 26 header: round glass buttons and the clock in the top-right corner, nothing else.
+             No clipping down to the pills: with advanced effects a focused pill scales up past its row. -->
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <!-- Left: the Wi-Fi pill, on TVs that show it (this one hides it). -->
+            <LinearLayout
+                android:id="@+id/topButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="-10dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnWifi"
+                    style="@style/TopButton"
+                    android:maxWidth="180dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="@string/wifi"
+                    android:drawableStart="@drawable/ic_wifi"
+                    android:nextFocusDown="@+id/grid" />
+            </LinearLayout>
+
+            <!-- Right, as on Apple TV: round glass Sounds, Customize, Inputs and Settings buttons, then the time in a
+                 glass capsule. -->
+
+            <LinearLayout
+                android:id="@+id/rightButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Legacy top buttons kept for backwards compatibility but hidden in tvOS 27 compact layout -->
+                <TextView
+                    android:id="@+id/btnMute"
+                    style="@style/TopButtonIcon"
+                    android:contentDescription="@string/sounds_on"
+                    android:drawableStart="@drawable/ic_bell"
+                    android:visibility="gone"
+                    android:nextFocusDown="@+id/grid" />
+
+                <TextView
+                    android:id="@+id/btnReorder"
+                    style="@style/TopButtonIcon"
+                    android:contentDescription="@string/reorder"
+                    android:drawableStart="@drawable/ic_swap_vert"
+                    android:visibility="gone"
+                    android:nextFocusDown="@+id/grid" />
+
+                <TextView
+                    android:id="@+id/btnInputs"
+                    style="@style/TopButtonIcon"
+                    android:contentDescription="@string/inputs"
+                    android:drawableStart="@drawable/ic_input"
+                    android:visibility="gone"
+                    android:nextFocusDown="@+id/grid" />
+
+                <TextView
+                    android:id="@+id/btnSettings"
+                    style="@style/TopButtonIcon"
+                    android:contentDescription="@string/settings"
+                    android:drawableStart="@drawable/ic_settings"
+                    android:visibility="gone"
+                    android:nextFocusDown="@+id/grid" />
+
+                <!-- tvOS 27 compact clock–profile capsule -->
+                <LinearLayout
+                    android:id="@+id/clockBlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="4dp"
+                    android:background="@drawable/tvos_pill_bg"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/clock_panel"
+                    android:nextFocusDown="@+id/grid"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <TextClock
+                        android:id="@+id/clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:format12Hour="h:mm"
+                        android:format24Hour="HH:mm"
+                        android:textColor="@drawable/pill_text"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/inter_medium"
+                        android:fontFeatureSettings="tnum"
+                        android:duplicateParentState="true"
+                        android:includeFontPadding="false" />
+
+                    <!-- AM/PM, on its baseline; empty on a 24-hour clock. -->
+                    <TextClock
+                        android:id="@+id/ampm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:format12Hour=" a"
+                        android:format24Hour=""
+                        android:textColor="@drawable/pill_text"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/inter_medium"
+                        android:duplicateParentState="true"
+                        android:includeFontPadding="false" />
+
+                    <!-- tvOS 27 circular profile avatar: real user photo or neutral tvOS silhouette -->
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/ic_profile_default"
+                        android:scaleType="fitCenter"
+                        android:importantForAccessibility="no" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- The old greeting and date header. tvOS 26 has none, so it stays hidden; the views remain
+                 because MainActivity still fills them in every minute. -->
+            <LinearLayout
+                android:id="@+id/leftBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topButtons"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/greeting"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#8CFFFFFF"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_medium" />
+
+                <TextView
+                    android:id="@+id/shamsiDate"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:visibility="gone" />
+
+                <TextClock
+                    android:id="@+id/date"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:format12Hour="@string/date_format_home"
+                    android:format24Hour="@string/date_format_home" />
+            </LinearLayout>
+
+            <!-- Shown only when show_stats is on: one line under the buttons. -->
+            <TextView
+                android:id="@+id/stats"
+                android:layout_width="match_parent"
+                android:layout_below="@id/topButtons"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#D9FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="@font/inter_medium"
+                android:letterSpacing="0.04"
+                android:focusable="false"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- The grid must not clip, so scaled tiles can overflow their cells. Full height, under the header: the grid's
+             top padding keeps the dock low on the screen. No clipping here either: the dock band reaches a few dp
+             past the grid's sides, into the screen margin. -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="40dp"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:descendantFocusability="afterDescendants" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <!-- The single floating glass highlight that springs between tiles. -->
+    <com.gathin.tvhome.GlassView
+        android:id="@+id/glass"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:alpha="0"
+        android:importantForAccessibility="no" />
+</FrameLayout>
