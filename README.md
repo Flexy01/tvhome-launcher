@@ -2,25 +2,25 @@
 
 <p align="center">
   <b>A polished, lightweight tvOS-inspired home screen for Android TV and Google TV.</b><br>
-  Liquid Glass controls, the tvOS focus engine, a six-wide dock that slides away, aerial backgrounds.
+  Dynamic Top Shelf with cinematic backdrops, Liquid Glass controls, the tvOS focus engine, and a six-wide dock that slides away.
 </p>
 
 <p align="center">
   <a href="https://github.com/Flexy01/tvhome-launcher/releases/latest"><img src="https://img.shields.io/badge/download-APK-cfffcf?style=flat&logo=android&logoColor=white&labelColor=15181e" alt="Download the APK"></a>
   <a href="https://github.com/Gathin23/cleanyourtv"><img src="https://img.shields.io/badge/fork%20of-Gathin23%2Fcleanyourtv-15181e?style=flat&logo=github" alt="Fork of Gathin23/cleanyourtv"></a>
-  <img src="https://img.shields.io/badge/style-tvOS%2026-cfffcf?style=flat&labelColor=15181e" alt="tvOS 26 style">
+  <img src="https://img.shields.io/badge/style-tvOS%2027-cfffcf?style=flat&labelColor=15181e" alt="tvOS 27 style">
   <img src="https://img.shields.io/badge/platform-Android%20TV%20%7C%20Google%20TV-cfffcf?style=flat&labelColor=15181e" alt="Android TV and Google TV">
   <img src="https://img.shields.io/badge/root-not%20needed-cfffcf?style=flat&labelColor=15181e" alt="No root">
   <a href="LICENSE"><img src="https://img.shields.io/badge/licence-MIT-cfffcf?style=flat&labelColor=15181e" alt="MIT licence"></a>
 </p>
 
 <p align="center">
-  <img src="docs/fork/demo.gif" alt="Moving around Home: icons lift and lean as focus moves along the dock, the dock slides to the top over the app rows and back, then focus goes to the round glass icons and the clock in the top-right" width="900">
+  <img src="docs/fork/home.png" alt="TvHome Launcher: Dynamic Top Shelf with Lupin, Liquid Glass dock, and compact clock & profile capsule" width="900">
 </p>
 
 > **What this is:** a fork of [CleanYourTV](https://github.com/Gathin23/cleanyourtv), which strips the ads and
 > bloatware from Android TVs and replaces the home screen. The debloat, install and one-line restore are the
-> original project's, unchanged. **The launcher is rebuilt** to match Apple TV down to the motion and sound.
+> original project's, unchanged. **The launcher is completely rebuilt** to match the authentic tvOS 27 experience down to the motion, sound, dynamic Top Shelf, and Liquid Glass controls.
 
 ## Original vs this fork
 
@@ -30,50 +30,50 @@
     <th width="50%">TvHome Launcher (this fork)</th>
   </tr>
   <tr>
-    <td><img src="docs/new-home.jpg" alt="The original launcher: greeting, large clock and text pills at the top, four apps in the dock"></td>
-    <td><img src="docs/fork/home.jpg" alt="This fork: round glass buttons and a clock capsule in the top-right, six apps in a wider glass dock over an aerial"></td>
+    <td><img src="docs/new-home.jpg" alt="The original launcher: greeting, large clock and text pills at the top, four apps in the dock over a static red glow"></td>
+    <td><img src="docs/fork/home.png" alt="TvHome Launcher: Dynamic Top Shelf with full-screen cinematic backdrop, tvOS 27 clock & profile capsule, and Liquid Glass dock"></td>
   </tr>
 </table>
 
 | | Original | TvHome Launcher |
 |---|---|---|
-| **Focus** | A glass box that springs from tile to tile | No box: the icon itself lifts, leans toward the press and settles, with a moving highlight, like the tvOS focus engine |
-| **Top bar** | Greeting, large clock and date; text pills | Round Liquid Glass buttons (sound, Customize, Inputs, Settings) and a glass clock with AM/PM; the clock opens a large panel with seconds |
-| **Dock** | Four apps, the focused app's name in large type above it | Six apps, an even glass margin, rounder icons; **Down slides the dock to the top** with every app row under it |
-| **Grid** | Name under each tile on focus | Larger tiles, only the focused app named, a nudge at the end of a row |
-| **Sound** | System clicks | A soft tick between icons and a pop on opening an app, with a bell button to silence them |
-| **Background** | Colour glow, wallpaper or a theme | Apple aerials playing behind Home: pick one or **cycle through them all** from the Background menu |
-| **Type** | Outfit | Inter Display and Inter Text in place of SF Pro, tabular figures on the clocks |
+| **Top Shelf** | Plain text title above the dock with a static color glow | **Dynamic cinematic Top Shelf**: Integrates with Android TvContract (`WatchNext` & `PreviewPrograms`) for Netflix, Prime Video, Turkcell TV+, YouTube; displays content titles, brand badges, rich metadata, and high-res backdrops with smooth 12s carousel rotation |
+| **Focus engine** | A glass box that springs from tile to tile | No box: the icon itself lifts (1.18×), leans toward the D-pad direction and settles with a moving specular highlight, matching the authentic tvOS focus engine |
+| **Top bar & controls** | Greeting, large clock and date; text pills | **tvOS 27 Compact Clock & Profile Capsule** (tabular time + avatar); opens a Liquid Glass Control Center with quick toggles (Screensaver, Wi-Fi, Sounds, Sleep Timer) and system menus |
+| **Dock** | Four apps, the focused app's name in large type above it | Six apps (customizable 4–7) in an authentic **Liquid Glass dock** with inner rim refraction and lens borders; **Down slides the dock to the top** over the app grid |
+| **Grid** | Name under each tile on focus over a black background | Seamless multi-row grid keeping the cinematic backdrop visible; focused app lifts with its name displayed beneath |
+| **Sound** | System clicks | A soft tick between icons and a pop on opening an app, with a quick mute toggle in Control Center |
+| **Background** | Static color glow, wallpaper or a theme | Dynamic content backdrops when browsing apps, or Apple aerial videos playing live behind Home with an on-TV downloader |
+| **Typography** | Outfit | Inter Display and Inter Text in place of SF Pro, tabular figures on the clocks |
 
 ## Screenshots
 
-| Down from the dock | A focused glass button |
+| Dynamic Top Shelf (Spider-Noir / Prime Video) | App grid (Down from dock) |
 |---|---|
-| ![The dock slid to the top of the screen with all the app rows under it](docs/fork/apps.jpg) | ![The Inputs button focused: white glass, lifted](docs/fork/buttons.jpg) |
+| ![Dynamic Top Shelf with Spider-Noir cinematic backdrop and Prime Video in the Liquid Glass dock](docs/fork/top-shelf-prime.png) | ![The dock slid to the top of the screen with all app rows under it over the continuous backdrop](docs/fork/apps.png) |
 
-## The top-right controls
-
-Five Liquid Glass controls sit in the corner, the way Apple TV puts them. Press Up from the dock to reach them;
-each lifts and leans as it takes focus, just like the app icons.
-
-| Clock | Inputs |
+| tvOS 27 focused capsule | Control Center & Quick Settings |
 |---|---|
-| ![The clock opened: a glass panel with the time to the second and the date](docs/fork/clock.jpg) | ![The Inputs menu: HDMI ports by device name and Live TV](docs/fork/inputs.jpg) |
-| **Clock.** Select the time for a larger panel with seconds and the date. Down or Left closes it and moves on. | **Inputs.** Every HDMI port under its device's name (here a PlayStation 5, marked Connected) and Live TV. Left or Right leaves the menu. |
+| ![The tvOS 27 clock and profile capsule focused with glowing white glass](docs/fork/buttons.png) | ![The Liquid Glass Control Center and Settings popup opened from the top capsule](docs/fork/settings-menu.png) |
 
-| Silence | Settings |
-|---|---|
-| ![The bell button showing the silenced bell with a slash](docs/fork/silenced.jpg) | ![The Settings menu: TV settings, edit dock, reorder apps, background, top icons, sounds, module cards](docs/fork/settings-menu.jpg) |
-| **Sounds.** The bell turns all of Home's sounds off and on; silenced, it shows the bell with a slash. Hold OK on it for the Sounds panel. | **Settings.** Press for the launcher's menu: TV settings, Edit dock, Reorder apps, Background, Top icons, Sounds and Module cards. Hold OK to go straight to the Android TV settings. |
+## The tvOS 27 controls & Control Center
 
-**Customize** (the arrows) rearranges the apps: OK picks one up, the arrows move it, Back places it.
+In line with tvOS 27, the top-right corner features an integrated **Liquid Glass Clock & Profile Capsule**:
+- **Compact capsule:** Displays the current time with tabular figures and your circular profile avatar (real photo or neutral tvOS silhouette).
+- **Fluid focus:** Pressing Up from the dock directs focus straight to the capsule, which lifts and glows in white glass.
+- **Control Center (Denetim Merkezi):** Selecting the capsule opens the authentic Liquid Glass quick controls panel:
+  - **Profile card:** Active user name, time, and quick link to the expanded clock panel with seconds and date.
+  - **Quick action tiles:** One-tap controls for **Screensaver** (launches the system Daydream screensaver via Somnambulator; note that on Android TV this starts the screensaver rather than hardware standby or sleep), **Wi-Fi** status and settings, **Sounds** mute/unmute, and **Sleep Timer**.
+  - **System actions:** TV settings, Inputs (HDMI ports with device names and Live TV), Edit dock, Reorder apps, Background (Aerials), and Launcher settings.
+  - **HDMI Inputs:** Every HDMI port listed under its connected device name (e.g., PlayStation 5, Apple TV, Nintendo Switch) plus Live TV.
 
-Don't want them all? Open **Settings**, then **Top icons**, to show or hide Inputs, Customize, the sound bell and the clock. Settings always stays.
+<p align="center">
+  <img src="docs/fork/sounds.jpg" alt="Sounds: All sounds, Navigation sound and App open sound, each On or Off" width="550">
+</p>
 
-| Top icons | Sounds |
-|---|---|
-| ![Top icons: Inputs, Switch apps, Sound and Clock, each Shown or Hidden](docs/fork/top-icons.jpg) | ![Sounds: All sounds, Navigation sound and App open sound, each On or Off](docs/fork/sounds.jpg) |
-| **Settings → Top icons.** Show or hide Inputs, Customize, the sound bell and the clock. | **Settings → Sounds**, or hold OK on the bell. All sounds at once, or the navigation tick and the app open pop separately. |
+<p align="center">
+  <b>Control Center → Sounds</b> (or hold OK on the sound toggle): All sounds at once, or the navigation tick and the app open pop separately.
+</p>
 
 ## Animated backgrounds
 
@@ -200,25 +200,25 @@ Claude Code with an Anthropic plan, Codex or Gemini CLI work too.
 The assistant backs up, debloats, builds and installs the launcher, and checks each step with
 screenshots pulled from the TV. With this repo as context it takes about fifteen minutes.
 
-## What you get
+## Key features
 
-- **A pitch-black home** with a dock of your four favourite apps in a rounded band, where Apple TV puts it.
-- **A top shelf** naming the focused app in large type, with an ambient glow in a colour taken from its artwork.
-- **The rest of your apps in a grid** that slides up when you press Down.
-- **One floating glass highlight** that springs from tile to tile. The focused tile lifts and shows its name.
-- **Three frosted buttons**: Inputs (HDMI ports under the names you gave them in the TV's settings, AV, Live TV), Wi-Fi or Ethernet with the network name, Settings.
-- **A greeting, a thin clock and the date** in [Outfit](https://fonts.google.com/specimen/Outfit), and a matching Clock screensaver. Set `show_stats` in config or a theme for one line under the clock: CPU, free memory and free storage. It stays off unless you turn it on, and it refreshes only while Home is on screen.
-- **Themes** that change colours, wallpaper, dock and columns without a rebuild, and **module cards** that let other apps plug a tile in, only with your say-so.
+- **Dynamic cinematic Top Shelf** with live `TvContract` integration (`WatchNext` and `PreviewPrograms` for Netflix, Prime Video, Turkcell TV+, YouTube): high-resolution backdrops, content titles, brand badges, and metadata with smooth 12-second carousel rotation.
+- **tvOS Liquid Glass dock** hosting your favourite apps (customizable 4 to 7 apps) with dual inner rim refraction, lens border, and depth shadow.
+- **tvOS focus engine**: icons lift (1.18× scale), lean directionally toward D-pad navigation, and shimmer with a dynamic specular highlight.
+- **Seamless app grid**: pressing Down slides the dock to the top while keeping the cinematic backdrop visible behind the grid; focused tile lifts with its name displayed beneath.
+- **tvOS 27 Control Center**: compact clock and profile avatar capsule opening quick toggles for Screensaver, Wi-Fi, audio, sleep timer, HDMI inputs, and dock customization.
+- **Moving aerial backgrounds**: Apple aerial screensavers playing behind Home with an on-TV downloader.
+- **Lightweight & battery-friendly**: Native Android TV app (under 2 MiB) built in pure Java/AndroidX, optimized for 1 GB RAM hardware with zero background service overhead.
 
 And a TV that stops working against you: no sponsored rows, no "Discover" nags, no analytics
 phoning home, no apps you never asked for.
 
 | | |
 |---|---|
-| ![The top shelf names the focused app over an ambient glow in its colour](docs/focus-2-up-netflix.png) | ![The Inputs popup: HDMI ports with what is connected, AV and Live TV](docs/inputs-menu.jpg) |
-| *Top shelf and ambient glow* | *Inputs: HDMI with connection state, AV, Live TV* |
-| ![The grid with the glass highlight on a tile and its name beneath](docs/focus-1-fancode.png) | ![The Clock screensaver: a thin clock drifting over the glow](docs/clock-screensaver.png) |
-| *The grid, one glass highlight, the tile's name* | *Clock screensaver, drifts so nothing burns in* |
+| ![Dynamic Top Shelf displaying Prime Video cinematic backdrop, title, and metadata](docs/focus-2-up-netflix.png) | ![The Inputs popup: HDMI ports with what is connected, AV and Live TV](docs/inputs-menu.jpg) |
+| *Dynamic Top Shelf with cinematic backdrop* | *Inputs: HDMI with connection state, AV, Live TV* |
+| ![The app grid with the dock slid to the top and focused tile lifted](docs/focus-1-fancode.png) | ![The Clock screensaver: a thin clock drifting over the glow](docs/clock-screensaver.png) |
+| *App grid under the dock, seamless backdrop* | *Clock screensaver, drifts so nothing burns in* |
 | ![The aurora theme: a wallpaper and tinted pills, pushed without a rebuild](docs/theme-aurora.jpg) | ![Six columns and a six-app dock from a theme's config.json](docs/theme-six-columns.jpg) |
 | *Aurora theme, pushed with `tools/theme.sh`* | *Six columns and a six-app dock, same launcher* |
 
@@ -428,9 +428,11 @@ network, no background services. It needs JDK 17 and Android SDK platform 34 to 
 `brew install openjdk@17 android-commandlinetools` and `sdkmanager "platforms;android-34" "build-tools;34.0.0"`. On Linux
 the install script finds `~/Android/Sdk` and the `java` on your PATH.
 
+- **Dynamic Top Shelf:** natively queries Android `TvContract` for `WatchNextPrograms` and `PreviewPrograms` across installed providers (Netflix, Prime Video, Turkcell TV+, YouTube). Automatically displays content titles, brand badges, and metadata, paired with high-resolution cinematic backdrops (`heroArt`) with LRU RAM and disk caching and 12-second carousel rotation.
+- **tvOS 27 Control Center:** quick access to screensaver, Wi-Fi, audio toggles, sleep timer, TV settings, HDMI inputs, dock editing, and launcher settings via the top-right compact clock and profile capsule.
 - **Configure** in [`config.xml`](launcher/app/src/main/res/values/config.xml): dock order, hidden apps, the Live TV package, columns (tiles shrink from 5 up), rows under the dock, an optional VPN app for the network pill, and `reduced_motion` for TVs whose GPU cannot keep up.
 - **App library (optional):** enable `app_library` in config.xml or a theme to browse installed apps and add or remove Home shortcuts with the remote. See [the app library guide](docs/app-library.md).
-- **On-TV launcher settings:** click Settings for the TV's system settings, or hold OK on Settings and choose Launcher settings to set 4, 5, 6 or 7 apps per row, turn animations on or off, and opt into advanced effects. The advanced option adds tile lift, icon zoom and smooth ambient-colour transitions; it may use more memory. Use Follow theme to clear on-TV choices. Pushing or resetting a theme also clears them.
+- **On-TV launcher settings:** access Launcher settings from Control Center to set 4, 5, 6 or 7 apps per row, turn animations on or off, and customize effects. Use Follow theme to clear on-TV choices. Pushing or resetting a theme also clears them.
 - **Change the default home:** Launcher settings and the optional Default-home tile (`show_home_settings_shortcut`) open Android's home picker. Choose the original launcher to stop using TvHome as Home, or TvHome to return. The original launcher must be enabled. If the install script disabled it, use the restore script below first. Some TVs provide no home picker.
 - **Themes** set the same keys plus a background colour and a wallpaper from a `config.json` pushed to the TV, no rebuild. Four ship in [`themes/`](themes/), documented there.
 - **Language** follows the TV: English, German, Spanish, Catalan, French, Russian, Serbian (Latin), Polish, Czech, Portuguese, Turkish, Arabic, Hebrew, Simplified Chinese, Traditional Chinese (Taiwan), Thai, Finnish, Vietnamese, Bangla. Android 13+ can set it for the launcher alone: `tools/tv.py 'cmd locale set-app-locales com.gathin.tvhome --locales ca'`.
@@ -440,7 +442,7 @@ the install script finds `~/Android/Sdk` and the `java` on your PATH.
 - **Clock screensaver**: a drifting clock over the glow, so nothing burns in. Pick "Clock" in the TV's screensaver settings, or over ADB:
   `tools/tv.py 'settings put secure screensaver_components com.gathin.tvhome/.ClockDream; settings put secure screensaver_enabled 1'`
 - **Remote keys**: an optional accessibility service keeps the remote's Input button working on Google TV (`INPUT_KEY_SERVICE=1` at install) and can bring back other buttons only the stock launcher answered, such as the YouTube button (`app_keys` and `input_key_keycodes`, in `config.xml` or a theme; `HOME_KEY_SERVICE=1` reads `app_keys` too), another fixes sticks whose Home key sends ALL_APPS and opens Settings from the remote's gear button, even one Android does not map (`HOME_KEY_SERVICE=1`, scancodes or keycodes in `config.xml`). With `settings_key_panel` the gear opens a [small quick settings panel](docs/quick-settings-panel.jpg) instead, over Home or any app: TV settings, Display, Network, Apps and Launcher settings.
-- **Navigation** is deliberate: Up and Down move one row, the top buttons never fall through to tiles and Down from them returns to the dock tile you came from, the last focused app is remembered, and installing or removing an app refreshes the tiles while Home is open.
+- **Navigation** is deliberate: Up and Down move one row, the top capsule never falls through to tiles and Down from it returns to the dock tile you came from, the last focused app is remembered, and installing or removing an app refreshes the tiles while Home is open.
 - **Artwork**: app banners load at xhdpi or better, so low-density TV UIs do not downsample them before the focus zoom.
 
 ## Restoring your TV
