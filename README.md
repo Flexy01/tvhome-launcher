@@ -52,9 +52,9 @@
 |---|---|
 | ![Dynamic Top Shelf with Spider-Noir cinematic backdrop and Prime Video in the Liquid Glass dock](docs/fork/top-shelf-prime.png) | ![The dock slid to the top of the screen with all app rows under it over the continuous backdrop](docs/fork/apps.png) |
 
-| tvOS 27 focused capsule | Control Center & Quick Settings |
+| tvOS 27 focused capsule | tvOS 27 Control Center |
 |---|---|
-| ![The tvOS 27 clock and profile capsule focused with glowing white glass](docs/fork/buttons.png) | ![The Liquid Glass Control Center and Settings popup opened from the top capsule](docs/fork/settings-menu.png) |
+| ![The tvOS 27 clock and profile capsule focused with glowing white glass](docs/fork/buttons.png) | ![The authentic tvOS 27 Liquid Glass Control Center with Quick Action tiles and system rows](docs/fork/control-center.png) |
 
 ## The tvOS 27 controls & Control Center
 
@@ -68,18 +68,24 @@ In line with tvOS 27, the top-right corner features an integrated **Liquid Glass
   - **HDMI Inputs:** Every HDMI port listed under its connected device name (e.g., PlayStation 5, Apple TV, Nintendo Switch) plus Live TV.
 
 <p align="center">
-  <img src="docs/fork/sounds.jpg" alt="Sounds: All sounds, Navigation sound and App open sound, each On or Off" width="550">
+  <img src="docs/fork/control-center.png" alt="TvHome Launcher: Authentic tvOS 27 Liquid Glass Control Center with Quick Action tiles and system rows" width="600">
 </p>
 
+| Settings popup menu | Sound options panel |
+|---|---|
+| ![The Liquid Glass Settings popup menu for dock editing, app reordering and launcher options](docs/fork/settings-menu.png) | ![Sounds: All sounds, Navigation sound and App open sound, each On or Off](docs/fork/sounds.jpg) |
+
 <p align="center">
-  <b>Control Center → Sounds</b> (or hold OK on the sound toggle): All sounds at once, or the navigation tick and the app open pop separately.
+  <b>Quick Controls & Sounds:</b> Access system settings, dock editing and app reordering from the Settings menu, or hold OK on the Control Center sound toggle for individual tick and pop toggles.
 </p>
 
 ## Animated backgrounds
 
-![The Background menu: Cycle through all marked Playing, then each aerial by name](docs/fork/background.jpg)
+<p align="center">
+  <img src="docs/fork/background.jpg" alt="The Background menu: Cycle through all marked Playing, then each aerial by name" width="460">
+</p>
 
-Apple's aerials play behind Home as moving video. Open **Settings** and choose **Background**:
+Apple's aerials play behind Home as moving video. Open **Control Center → Background** (or Settings):
 
 - **Cycle through all.** Each aerial plays through once, then Home fades to the next, round the list.
 - **Or pick one** (North America Aurora, Hawaii, New York Night, London, Korea and Japan Night, Antarctica,
